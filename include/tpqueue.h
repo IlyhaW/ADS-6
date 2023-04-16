@@ -26,7 +26,7 @@ class TPQueue {
             int a = l;
             mas[l % size] = val;
             T temp = mas[a % size];
-            while (mas[(a - 1) % size].priority < mas[a % size].priority \
+            while (mas[(a - 1) % size].prior < mas[a % size].prior \
             && f < a) {
                 temp = mas[a % size];
                 mas[a % size] = mas[(a - 1) % size];
